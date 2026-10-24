@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+    <AssemblyName>UncookedFoodPickable</AssemblyName>
+    <RootNamespace>UncookedFoodPickable</RootNamespace>
+    <!-- 指向当前实机安装（2.55 / Unity 6 载体） -->
+    <TheLongDarkPath>F:\SteamLibrary\steamapps\common\TheLongDark</TheLongDarkPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="STBlade.Modding.TLD.Il2CppAssemblies.Windows" Version="2.55.0" />
+  </ItemGroup>
+
+  <!-- MelonLoader / HarmonyX / Unity / 游戏程序集由上面的 STBlade 包传递提供 -->
+  <ItemGroup>
+    <Using Include="Il2Cpp" />
+  </ItemGroup>
+
+</Project>
